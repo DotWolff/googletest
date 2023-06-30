@@ -1,5 +1,3 @@
-Includes["GoogleTest"] = "%{wks.location}/External/googletest/googletest/include"
-
 project "GoogleTest"
 
     kind "StaticLib"

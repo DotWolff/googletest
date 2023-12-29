@@ -28,10 +28,15 @@ project "GoogleMock"
         runtime "Release"
         optimize "on"
 
-    filter "configurations:Testing"
-        defines "TESTING"
+    filter "configurations:TestingDebug"
+        defines "DUSK_TESTING"
         runtime "Debug"
         symbols "on"
+
+    filter "configurations:TestingRelease"
+        defines "DUSK_TESTING"
+        runtime "Release"
+        optimize "on"
 
     filter "configurations:Dist"
         defines "DIST"
